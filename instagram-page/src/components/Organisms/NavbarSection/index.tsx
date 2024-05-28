@@ -46,6 +46,7 @@ const NavBar = () => {
       height="100vh" // Setting height to 100% of the viewport height
       p={1} // Applying padding
       pb={3} // Adding bottom padding
+      position= "fixed"
     >
       {/* Container for the top section */}
       <Grid item>

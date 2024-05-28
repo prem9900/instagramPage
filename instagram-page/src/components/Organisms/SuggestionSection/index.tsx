@@ -1,9 +1,7 @@
 import React from "react"; // Import React library
-import { Box, Grid } from "@mui/material"; // Import Box and Grid components from MUI library
+import { Box, Grid } from "@mui/material"; // Import Box, Grid, Typography, and Link components from MUI library
 import { styled } from "@mui/system"; // Import styled function from MUI system
-
 import { ACCOUNT_ITEMS } from "../../Utils/constants"; // Import constant ACCOUNT_ITEMS from Utils/constants
-
 import SwitchAccount from "../../Molecules/SwithAccount"; // Import SwitchAccount component
 
 // Define styled component for SwitchAccount with any specific styles
@@ -30,7 +28,7 @@ const Accounts = () => (
       {ACCOUNT_ITEMS.map((account, index) => ( // Map through each account item
         <AccountItem key={index}> {/* Account item component with unique key */}
           <Grid item> {/* Grid item component */}
-            <StyledSwitchAccount src={account.src} Text={account.Text} /> {/* Render StyledSwitchAccount component */}
+            <StyledSwitchAccount src={account.src} Text={account.Text}  /> {/* Render StyledSwitchAccount component */}
           </Grid>
           <Grid> {/* Empty grid item */}
             {/* You can add content or components here if needed */}
@@ -41,4 +39,5 @@ const Accounts = () => (
   </Grid>
 );
 
-export default Accounts; // Export Accounts component as default
+
+export default Accounts; 

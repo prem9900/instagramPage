@@ -32,7 +32,7 @@ const Stories = () => (
       {STORY_ITEMS.map((story, index) => ( // Map through STORY_ITEMS array
         <StoryItem key={index}> {/* Render each StoryItem */}
           <Grid item> {/* Grid item wrapper */}
-            <Story src={story.src} alt={story.Text} /> {/* Render Story component with src and alt props */}
+            <Story src={story.src} Text={story.Text} /> {/* Render Story component with src and alt props */}
           </Grid>
           <Grid> {/* Grid item wrapper */}
             <Typography variant="caption">{story.Text}</Typography> {/* Render Typography component with variant and text props */}

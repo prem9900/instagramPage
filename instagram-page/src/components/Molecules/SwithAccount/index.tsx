@@ -7,6 +7,8 @@ import Typography from "../../Atoms/Typography"; // Importing Typography compone
 export interface SwitchAccountProps {
   src: string; // Source URL for an image
   Text: string; // Text to be displayed
+  
+
 }
 
 // Styling the SwitchAccount component using styled from Emotion
